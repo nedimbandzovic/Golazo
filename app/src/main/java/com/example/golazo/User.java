@@ -1,5 +1,7 @@
 package com.example.golazo;
 import androidx.room.Entity;
+import androidx.room.ColumnInfo;
+import androidx.room.PrimaryKey;
 @Entity(tableName = "users")
 public class User {
     @PrimaryKey(autoGenerate = true)
