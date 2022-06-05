@@ -152,35 +152,6 @@ public class ResultActivity extends AppCompatActivity {
             }
         }.start();
 
-        new CountDownTimer(20000, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-                minutes3.setText("");
-                minutes3.setText("90+'");
-
-            }
-
-            public void onFinish() {
-                Animation anim = new AlphaAnimation(0.0f, 1.0f);
-                anim.setDuration(50); //You can manage the blinking time with this parameter
-                anim.setStartOffset(20);
-                anim.setRepeatMode(Animation.REVERSE);
-                anim.setRepeatCount(Animation.INFINITE);
-                result3.setText("1-0");
-                result3.setTextColor(Color.RED);
-                result3.startAnimation(anim);
-                new CountDownTimer(7000, 8000) {
-                    public void onTick(long millisUntilFinished) {
-                    }
-                    public void onFinish() {
-                        minutes3.setText("FT");
-                        minutes3.setTextColor(Color.WHITE);
-                        result3.clearAnimation();
-                        result3.setTextColor(Color.WHITE);
-                    }
-                }.start();
-            }
-        }.start();
         result1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
