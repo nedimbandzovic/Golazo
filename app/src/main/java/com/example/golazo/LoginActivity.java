@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                                     }
                                 });
                             } else{
-                                Intent intent=new Intent (LoginActivity.this, WelcomeScreen.class);
+                                Intent intent=new Intent (LoginActivity.this, ResultActivity.class);
                                 startActivity(intent);
                             }
                         }

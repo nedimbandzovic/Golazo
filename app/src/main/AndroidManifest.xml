@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Golazo">
         <activity
+            android:name=".match3"
+            android:exported="false" />
+        <activity
+            android:name=".match2"
+            android:exported="false" />
+        <activity
+            android:name=".match1"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeScreen"
             android:exported="false" />
         <activity
