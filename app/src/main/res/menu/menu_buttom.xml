@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Matches"
+        android:id="@+id/matches"
+        android:icon="@drawable/ic_baseline_sports_soccer_24"/>
+    <item
+        android:title="Leagues"
+        android:id="@+id/leagues"
+        android:icon="@drawable/ic_baseline_star_24"/>
+    <item
+        android:title="Players"
+        android:id="@+id/players"
+        android:icon="@drawable/ic_baseline_people_24"/>
+    <item
+        android:title="Settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+
+</menu>
