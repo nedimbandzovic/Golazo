@@ -1,5 +1,6 @@
 package com.example.golazo;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.NotificationManager;
@@ -9,11 +10,17 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.MenuItem;
+
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -178,6 +185,25 @@ public class ResultActivity extends AppCompatActivity {
                     sa.putExtra("sarajevorezultat",result2.getText().toString());
                     startActivity(sa);
                 }
+
+            }
+        });
+        BottomNavigationView bottomNavigationView=findViewById(R.id.navigation);
+        bottomNavigationView.setSelectedItemId(R.id.matches);
+        bottomNavigationView.setOnItemReselectedListener(new NavigationBarView.OnItemReselectedListener() {
+            @Override
+            public void onNavigationItemReselected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+
+                    case R.id.matches:
+
+                    case R.id.settings:
+                        startActivity(new Intent(ResultActivity.this,SettingsActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return;
+                }
+
 
             }
         });
