@@ -195,6 +195,12 @@ public class ResultActivity extends AppCompatActivity {
             public void onNavigationItemReselected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
 
+                    case R.id.leagues:
+                        startActivity(new Intent(ResultActivity.this,LeagueActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return;
+
                     case R.id.matches:
 
                     case R.id.settings:

@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Golazo">
         <activity
+            android:name=".BosnianPremierLeagueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishPremierLeagueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeagueActivity"
+            android:exported="false" />
+        <activity
             android:name=".SettingsActivity"
             android:exported="false" />
         <activity
