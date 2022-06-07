@@ -35,6 +35,7 @@ public class ResultActivity extends AppCompatActivity {
     TextView result2;
     TextView result3;
     ImageView calendar;
+    ImageView ticket;
 
 
     @Override
@@ -49,6 +50,16 @@ public class ResultActivity extends AppCompatActivity {
         result2 = (TextView) findViewById(R.id.textView15);
         result3 = (TextView) findViewById(R.id.textView24);
         calendar=findViewById(R.id.imageView70);
+        ticket=findViewById(R.id.imageView76);
+
+        ticket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ticket_intent=new Intent(ResultActivity.this, TicketActivity.class);
+                startActivity(ticket_intent);
+                overridePendingTransition(0, 0);
+            }
+        });
         calendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
