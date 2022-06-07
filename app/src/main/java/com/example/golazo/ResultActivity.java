@@ -26,7 +26,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class ResultActivity extends AppCompatActivity {
-    Handler handler=new Handler();
+    Handler handler = new Handler();
     TextView minutes1;
     TextView minutes2;
     TextView minutes3;
@@ -40,12 +40,12 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         getSupportActionBar().hide();
-        minutes1=(TextView)findViewById(R.id.textView9);
-        minutes2=(TextView)findViewById(R.id.textView13);
-        minutes3=(TextView)findViewById(R.id.textView22);
-        result1=(TextView)findViewById(R.id.textView11);
-        result2=(TextView)findViewById(R.id.textView15);
-        result3=(TextView)findViewById(R.id.textView24);
+        minutes1 = (TextView) findViewById(R.id.textView9);
+        minutes2 = (TextView) findViewById(R.id.textView13);
+        minutes3 = (TextView) findViewById(R.id.textView22);
+        result1 = (TextView) findViewById(R.id.textView11);
+        result2 = (TextView) findViewById(R.id.textView15);
+        result3 = (TextView) findViewById(R.id.textView24);
         getSupportActionBar().hide();
 
         new CountDownTimer(6000, 1000) {
@@ -69,6 +69,7 @@ public class ResultActivity extends AppCompatActivity {
                 new CountDownTimer(7000, 8000) {
                     public void onTick(long millisUntilFinished) {
                     }
+
                     public void onFinish() {
                         minutes1.setText("FT");
 
@@ -100,6 +101,7 @@ public class ResultActivity extends AppCompatActivity {
                 new CountDownTimer(7000, 8000) {
                     public void onTick(long millisUntilFinished) {
                     }
+
                     public void onFinish() {
                         minutes2.setText("85'");
                         minutes2.setTextColor(Color.RED);
@@ -108,31 +110,37 @@ public class ResultActivity extends AppCompatActivity {
                         new CountDownTimer(7000, 8000) {
                             public void onTick(long millisUntilFinished) {
                             }
+
                             public void onFinish() {
                                 minutes2.setText("86'");
                                 new CountDownTimer(7000, 8000) {
                                     public void onTick(long millisUntilFinished) {
                                     }
+
                                     public void onFinish() {
                                         minutes2.setText("87'");
                                         new CountDownTimer(7000, 8000) {
                                             public void onTick(long millisUntilFinished) {
                                             }
+
                                             public void onFinish() {
                                                 minutes2.setText("88'");
                                                 new CountDownTimer(7000, 8000) {
                                                     public void onTick(long millisUntilFinished) {
                                                     }
+
                                                     public void onFinish() {
                                                         minutes2.setText("89'");
                                                         new CountDownTimer(7000, 8000) {
                                                             public void onTick(long millisUntilFinished) {
                                                             }
+
                                                             public void onFinish() {
                                                                 minutes2.setText("90'");
                                                                 new CountDownTimer(7000, 8000) {
                                                                     public void onTick(long millisUntilFinished) {
                                                                     }
+
                                                                     public void onFinish() {
                                                                         minutes2.setText("FT");
                                                                         minutes2.setTextColor(Color.WHITE);
@@ -162,12 +170,12 @@ public class ResultActivity extends AppCompatActivity {
         result1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (minutes1.getText().toString()!="FT"){
+                if (minutes1.getText().toString() != "FT") {
                     Toast.makeText(getApplicationContext(), "Wait for the match to finish in order to get the latest information", Toast.LENGTH_SHORT).show();
 
-                } else{
-                    Intent intent_zeljo=new Intent(ResultActivity.this, match1.class);
-                    intent_zeljo.putExtra("zeljorezultat",result1.getText().toString());
+                } else {
+                    Intent intent_zeljo = new Intent(ResultActivity.this, match1.class);
+                    intent_zeljo.putExtra("zeljorezultat", result1.getText().toString());
                     startActivity(intent_zeljo);
                 }
 
@@ -177,36 +185,42 @@ public class ResultActivity extends AppCompatActivity {
         result2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (minutes2.getText().toString()!="FT"){
+                if (minutes2.getText().toString() != "FT") {
                     Toast.makeText(getApplicationContext(), "Wait for the match to finish in order to get the latest information", Toast.LENGTH_SHORT).show();
 
-                } else{
-                    Intent sa=new Intent(ResultActivity.this, match2.class);
-                    sa.putExtra("sarajevorezultat",result2.getText().toString());
+                } else {
+                    Intent sa = new Intent(ResultActivity.this, match2.class);
+                    sa.putExtra("sarajevorezultat", result2.getText().toString());
                     startActivity(sa);
                 }
 
             }
         });
-        BottomNavigationView bottomNavigationView=findViewById(R.id.navigation);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
         bottomNavigationView.setSelectedItemId(R.id.matches);
         bottomNavigationView.setOnItemReselectedListener(new NavigationBarView.OnItemReselectedListener() {
             @Override
             public void onNavigationItemReselected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
 
                     case R.id.leagues:
-                        startActivity(new Intent(ResultActivity.this,LeagueActivity.class));
+                        startActivity(new Intent(ResultActivity.this, LeagueActivity.class));
                         finish();
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
                         return;
 
                     case R.id.matches:
 
                     case R.id.settings:
-                        startActivity(new Intent(ResultActivity.this,SettingsActivity.class));
+                        startActivity(new Intent(ResultActivity.this, SettingsActivity.class));
                         finish();
-                        overridePendingTransition(0,0);
+                        overridePendingTransition(0, 0);
+                        return;
+
+                    case R.id.players:
+                        startActivity(new Intent(ResultActivity.this, PlayersActivity.class));
+                        finish();
+                        overridePendingTransition(0, 0);
                         return;
                 }
 
@@ -214,5 +228,5 @@ public class ResultActivity extends AppCompatActivity {
             }
         });
     }
-
 }
+

@@ -199,10 +199,17 @@ public class LeagueActivity extends AppCompatActivity {
                         finish();
                         overridePendingTransition(0,0);
                         return;
+
+                    case R.id.players:
+                        startActivity(new Intent(LeagueActivity.this,PlayersActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return;
+                }
                 }
 
 
-            }
+
 
 
         });

@@ -36,6 +36,12 @@ public class SettingsActivity extends AppCompatActivity {
                         finish();
                         overridePendingTransition(0,0);
                         return;
+                    case R.id.players:
+                        startActivity(new Intent(SettingsActivity.this,PlayersActivity.class));
+                        finish();
+                        overridePendingTransition(0,0);
+                        return;
+
 
                 }
 
