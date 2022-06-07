@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.view.MenuItem;
@@ -33,6 +34,7 @@ public class ResultActivity extends AppCompatActivity {
     TextView result1;
     TextView result2;
     TextView result3;
+    ImageView calendar;
 
 
     @Override
@@ -46,6 +48,17 @@ public class ResultActivity extends AppCompatActivity {
         result1 = (TextView) findViewById(R.id.textView11);
         result2 = (TextView) findViewById(R.id.textView15);
         result3 = (TextView) findViewById(R.id.textView24);
+        calendar=findViewById(R.id.imageView70);
+        calendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent calendar_intent=new Intent(ResultActivity.this, CalendarActivity.class);
+                startActivity(calendar_intent);
+                overridePendingTransition(0, 0);
+
+
+            }
+        });
         getSupportActionBar().hide();
 
         new CountDownTimer(6000, 1000) {
