@@ -9,22 +9,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class TicketActivity extends AppCompatActivity {
+public class JerseyActivity extends AppCompatActivity {
     EditText search;
     ImageView go;
     ImageView logo1,logo2,logo3,logo4,logo5,logo6,rikverc;
-    TextView match1,match2,match3,match4,match5,match6;
+    TextView match1,match2,match3,match4,match5,match6,sell;
     TextView comp1,comp2,comp3,comp4,comp5,comp6, announcement;
     Button button1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ticket);
+        setContentView(R.layout.activity_jersey);
         getSupportActionBar().hide();
-
         search=findViewById(R.id.editTextTextPersonName);
         go=findViewById(R.id.imageView64);
         logo1=findViewById(R.id.logo1);
@@ -48,18 +45,20 @@ public class TicketActivity extends AppCompatActivity {
         announcement=findViewById(R.id.textView80);
         button1=findViewById(R.id.button1);
         rikverc=findViewById(R.id.imageView61);
+        sell=findViewById(R.id.textView73);
+
 
         rikverc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TicketActivity.super.onBackPressed();
+                JerseyActivity.super.onBackPressed();
             }
         });
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_test=new Intent(TicketActivity.this, BosniaRomania.class);
+                Intent intent_test=new Intent(JerseyActivity.this, BosniaJersey.class);
                 startActivity(intent_test);
                 overridePendingTransition(0,0);
 
@@ -68,26 +67,27 @@ public class TicketActivity extends AppCompatActivity {
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (search.getText().toString().equals("nations")){
-                    logo1.setImageResource(R.drawable.nationsleaguex);
-                    logo2.setImageResource(R.drawable.nationsleaguex);
-                    logo3.setImageResource(R.drawable.nationsleaguex);
-                    logo4.setImageResource(R.drawable.nationsleaguex);
-                    logo5.setImageResource(R.drawable.nationsleaguex);
-                    logo6.setImageResource(R.drawable.nationsleaguex);
-                    comp1.setText("UEFA Nations League");
-                    comp2.setText("UEFA Nations League");
-                    comp3.setText("UEFA Nations League");
-                    comp4.setText("UEFA Nations League");
-                    comp5.setText("UEFA Nations League");
-                    comp6.setText("UEFA Nations League");
-                    match1.setText("Bosnia&Herzegovina - Romania");
-                    match2.setText("Finland - Montenegro");
-                    match3.setText("Lithuania - Turkey");
-                    match4.setText("Faroe Islands - Luxembourg");
-                    match5.setText("Moldova - Gibraltar");
-                    match6.setText("Bulgaria - Georgia");
+                if (search.getText().toString().equals("bosnia")){
+                    logo1.setImageResource(R.drawable.dresbih1);
+                    logo2.setImageResource(R.drawable.dresbih2);
+                    logo3.setImageResource(R.drawable.dresbih3);
+                    logo4.setImageResource(R.drawable.dresbih4);
+                    logo5.setImageResource(R.drawable.dresbih5);
+                    logo6.setImageResource(R.drawable.dresbih6);
+                    comp1.setText("Bosnia and Herzegovina");
+                    comp2.setText("Bosnia and Herzegovina");
+                    comp3.setText("Bosnia and Herzegovina");
+                    comp4.setText("Bosnia and Herzegovina");
+                    comp5.setText("Bosnia and Herzegovina");
+                    comp6.setText("Bosnia and Herzegovina");
+                    match1.setText("2018-2019 Home shirt");
+                    match2.setText("2020-2021 Home shirt");
+                    match3.setText("2014 FIFA WC Fan shirt");
+                    match4.setText("Fan-made shirt");
+                    match5.setText("2015-2017 Away shirt");
+                    match6.setText("2020-2021 Away shirt");
                     announcement.setText("More...");
+                    sell.setText("Found jerseys");
 
 
                 }
@@ -97,4 +97,5 @@ public class TicketActivity extends AppCompatActivity {
 
 
     }
-}
+
+    }

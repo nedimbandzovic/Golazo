@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Golazo">
         <activity
+            android:name=".BosniaJersey"
+            android:exported="false" />
+        <activity
+            android:name=".JerseyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShopActivity"
+            android:exported="false" />
+        <activity
             android:name=".BosniaRomania"
             android:exported="false" />
         <activity

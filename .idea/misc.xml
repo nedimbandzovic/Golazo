@@ -7,11 +7,13 @@
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/drawable/colors.xml" value="0.1" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/drawable/example.xml" value="0.2335" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/drawable/selector.xml" value="0.186" />
+        <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_bosnia_jersey.xml" value="0.264" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_bosnia_romania.xml" value="0.264" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_bosnian_premier_league.xml" value="0.25" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_calendar.xml" value="0.264" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_edindzeko.xml" value="0.2" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_english_premier_league.xml" value="0.41702867072111205" />
+        <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_jersey.xml" value="0.2" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_league.xml" value="0.21212121212121213" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -21,9 +23,10 @@
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_payment.xml" value="0.264" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_players.xml" value="0.25" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_register.xml" value="0.264" />
-        <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_result.xml" value="0.4" />
+        <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_result.xml" value="0.136" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_settings.xml" value="0.4" />
-        <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_ticket.xml" value="0.536" />
+        <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_shop.xml" value="0.176" />
+        <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/layout/activity_ticket.xml" value="0.5224913494809689" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/menu/menu.xml" value="0.1875" />
         <entry key="..\:/Users/nedim.bandzovic/AndroidStudioProjects/Golazo/app/src/main/res/menu/menu_buttom.xml" value="0.17760416666666667" />
       </map>

@@ -55,7 +55,7 @@ public class ResultActivity extends AppCompatActivity {
         ticket.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ticket_intent=new Intent(ResultActivity.this, TicketActivity.class);
+                Intent ticket_intent=new Intent(ResultActivity.this, ShopActivity.class);
                 startActivity(ticket_intent);
                 overridePendingTransition(0, 0);
             }
