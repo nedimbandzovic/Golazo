@@ -62,7 +62,7 @@ public class LeagueActivity extends AppCompatActivity {
 
                 String x=search.getText().toString();
                 if (x.toString().equals("pre")) {
-                    logo1.setImageResource(R.drawable.englishpl);
+                    logo1.setImageResource(R.drawable.englishpremierlogo);
                     logo5.setImageResource(R.drawable.mtelpremier);
                     logo4.setImageResource(R.drawable.premiership);
                     logo3.setImageResource(R.drawable.primeira);
@@ -78,7 +78,7 @@ public class LeagueActivity extends AppCompatActivity {
                     suggested.setText("Found leagues");
 
                 } else if (x.toString().equals("prem")) {
-                        logo1.setImageResource(R.drawable.englishpl);
+                        logo1.setImageResource(R.drawable.englishpremierlogo);
                         logo5.setImageResource(R.drawable.mtelpremier);
                         logo4.setImageResource(R.drawable.premiership);
                         logo3.setImageResource(R.drawable.primeira);
@@ -96,7 +96,7 @@ public class LeagueActivity extends AppCompatActivity {
                 }
                 else if (x.toString().equals("premi")) {
 
-                            logo1.setImageResource(R.drawable.englishpl);
+                            logo1.setImageResource(R.drawable.englishpremierlogo);
                             logo5.setImageResource(R.drawable.mtelpremier);
                             logo4.setImageResource(R.drawable.premiership);
                             logo3.setImageResource(R.drawable.primeira);
@@ -113,7 +113,7 @@ public class LeagueActivity extends AppCompatActivity {
 
                     }
                 else if (x.toString().equals("premie")) {
-                                logo1.setImageResource(R.drawable.englishpl);
+                                logo1.setImageResource(R.drawable.englishpremierlogo);
                                 logo5.setImageResource(R.drawable.mtelpremier);
                                 logo4.setImageResource(R.drawable.premiership);
                                 logo3.setImageResource(R.drawable.primeira);
@@ -131,7 +131,7 @@ public class LeagueActivity extends AppCompatActivity {
 
                         }
                 else if (x.toString().equals("premier")) {
-                                    logo1.setImageResource(R.drawable.englishpl);
+                                    logo1.setImageResource(R.drawable.englishpremierlogo);
                                     logo5.setImageResource(R.drawable.mtelpremier);
                                     logo4.setImageResource(R.drawable.premiership);
                                     logo3.setImageResource(R.drawable.primeira);
