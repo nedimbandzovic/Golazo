@@ -17,7 +17,7 @@ import com.google.android.material.navigation.NavigationBarView;
 public class PlayersActivity extends AppCompatActivity {
     EditText input;
     ImageView player1, player2,player3,player4,player5,player6,go, back;
-    TextView name1,name2,name3,name4,name5,name6, more;
+    TextView name1,name2,name3,name4,name5,name6, more, trending;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,7 @@ public class PlayersActivity extends AppCompatActivity {
         input=findViewById(R.id.editTextTextPersonName);
         more=findViewById(R.id.textView72);
         back=findViewById(R.id.imageView61);
+        trending=findViewById(R.id.textView73);
 
         getSupportActionBar().hide();
         back.setOnClickListener(new View.OnClickListener() {
@@ -70,6 +71,7 @@ public class PlayersActivity extends AppCompatActivity {
                     player6.setImageResource(R.drawable.edinho);
                     name6.setText("Edinho");
                     more.setText("More...");
+                    trending.setText("Found players");
                 }
                 else if (x.equals("edin")){
                     player1.setImageResource(R.drawable.dzeko);
@@ -85,6 +87,8 @@ public class PlayersActivity extends AppCompatActivity {
                     player6.setImageResource(R.drawable.edinho);
                     name6.setText("Edinho");
                     more.setText("More...");
+                    trending.setText("Found players");
+
                 }
             }
         });
