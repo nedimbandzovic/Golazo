@@ -9,14 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView54"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033"
+        app:layout_constraintVertical_bias="0.022"
         app:srcCompat="@drawable/rikvercicon" />
 
     <TextView
@@ -25,14 +25,13 @@
         android:layout_height="wrap_content"
         android:text="Settings"
         android:textColor="@color/white"
-        android:textSize="20dp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.036" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <ImageView
         android:id="@+id/imageView55"

@@ -11,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import javax.xml.transform.Result;
+
 public class TicketActivity extends AppCompatActivity {
     EditText search;
     ImageView go;
@@ -52,7 +54,10 @@ public class TicketActivity extends AppCompatActivity {
         rikverc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TicketActivity.super.onBackPressed();
+
+                Intent return1=new Intent(TicketActivity.this, ResultActivity.class);
+                startActivity(return1);
+                overridePendingTransition(0,0);
             }
         });
 

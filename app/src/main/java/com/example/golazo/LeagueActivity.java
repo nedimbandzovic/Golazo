@@ -48,7 +48,9 @@ public class LeagueActivity extends AppCompatActivity {
         rik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                LeagueActivity.super.onBackPressed();
+                Intent return2=new Intent(LeagueActivity.this, ResultActivity.class);
+                startActivity(return2);
+                overridePendingTransition(0,0);
             }
         });
 

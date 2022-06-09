@@ -58,8 +58,8 @@ public class JerseyActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent_test=new Intent(JerseyActivity.this, BosniaJersey.class);
-                startActivity(intent_test);
+                Intent intent_test2=new Intent(JerseyActivity.this, BosniaJersey.class);
+                startActivity(intent_test2);
                 overridePendingTransition(0,0);
 
             }

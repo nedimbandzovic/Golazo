@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class ShopActivity extends AppCompatActivity {
-    ImageView jerseys,tickets;
+    ImageView jerseys,tickets, rikverc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,14 @@ public class ShopActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         jerseys=findViewById(R.id.imageView85);
         tickets=findViewById(R.id.imageView87);
+        rikverc=findViewById(R.id.imageView84);
+
+        rikverc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ShopActivity.super.onBackPressed();
+            }
+        });
         tickets.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
